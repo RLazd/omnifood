@@ -65,6 +65,7 @@ html {
   /* 10px/ 16/px = 62.5%  =>  Precentage of users browser font-size setting: */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {

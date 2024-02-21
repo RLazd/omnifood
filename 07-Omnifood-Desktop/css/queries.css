@@ -128,10 +128,13 @@ Media query should work around 200-300px
   /* MOBILE NAV */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999; /*meaning close btn is on top of the element */)
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For firefox -> partial support */
     position: absolute; /* no relative if absolute to viewport */
     top: 0;
     left: 0;

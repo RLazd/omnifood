@@ -11,7 +11,7 @@
   height: 9.6rem;
   padding: 0 4.8rem;
 
-  /* for menu */
+  /* For menu */
   position: relative;
 }
 
@@ -59,7 +59,7 @@
   background-color: #cf711f;
 }
 
-/* MOBILE */
+/* MOBILE NAV */
 .btn-mobile-nav {
   border: none;
   background-color: none;
@@ -77,6 +77,24 @@
   display: none;
 }
 
+/* STICKY NAV */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /* **************************** */
 /* HERO */
 /* **************************** */
@@ -92,7 +110,6 @@
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* background-color: violet; */
   gap: 9.6rem;
   align-items: center;
 }
